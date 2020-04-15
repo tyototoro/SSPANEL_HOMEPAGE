@@ -1,454 +1,267 @@
-<!--
-
-
-
-                                   .. .vr
-                                 qBMBBBMBMY
-                                8BBBBBOBMBMv
-                              iMBMM5vOY:BMBBv
-              .r,             OBM;   .: rBBBBBY
-              vUL             7BB   .;7. LBMMBBM.
-             .@Wwz.           :uvir .i:.iLMOMOBM..
-              vv::r;             iY. ...rv,@arqiao.
-               Li. i:             v:.::::7vOBBMBL..
-               ,i7: vSUi,         :M7.:.,:u08OP. .
-                 .N2k5u1ju7,..     BMGiiL7   ,i,i.
-                  :rLjFYjvjLY7r::.  ;v  vr... rE8q;.:,,
-                 751jSLXPFu5uU@guohezou.,1vjY2E8@Yizero.
-                 BB:FMu rkM8Eq0PFjF15FZ0Xu15F25uuLuu25Gi.
-               ivSvvXL    :v58ZOGZXF2UUkFSFkU1u125uUJUUZ,
-             :@kevensun.      ,iY20GOXSUXkSuS2F5XXkUX5SEv.
-         .:i0BMBMBBOOBMUi;,        ,;8PkFP5NkPXkFqPEqqkZu.
-       .rqMqBBMOMMBMBBBM .           @kexianli.S11kFSU5q5
-     .7BBOi1L1MM8BBBOMBB..,          8kqS52XkkU1Uqkk1kUEJ
-     .;MBZ;iiMBMBMMOBBBu ,           1OkS1F1X5kPP112F51kU
-       .rPY  OMBMBBBMBB2 ,.          rME5SSSFk1XPqFNkSUPZ,.
-              ;;JuBML::r:.:.,,        SZPX0SXSP5kXGNP15UBr.
-                  L,    :@sanshao.      :MNZqNXqSqXk2E0PSXPE .
-              viLBX.,,v8Bj. i:r7:,     2Zkqq0XXSNN0NOXXSXOU
-            :r2. rMBGBMGi .7Y, 1i::i   vO0PMNNSXXEqP@Secbone.
-            .i1r. .jkY,    vE. iY....  20Fq0q5X5F1S2F22uuv1M;
-
-
-    又看源码，看你妹妹呀！
-    何だよ？
-
--->
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8"/>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
-  <meta name="author" content="Creative Tim">
-  <title>KoiCloud</title>
-  <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
-  <!-- Fonts -->
-  <link href="./static/css/5839154c03634cdeb6bbd43f02ae3758.css" rel="stylesheet">
-  <link href="./static/css/font-awesome.min.css" rel="stylesheet">
-  <!-- Icons -->
-  <link rel="stylesheet" href="./static/css/nucleo.css" type="text/css">
-  <link rel="stylesheet" href="./static/css/sweetalert2.min.css" type="text/css">
-  <link type="text/css" href="./static/css/czssr-index.css" rel="stylesheet">
+
+<html lang="zh" class="js flexbox flexboxlegacy canvas canvastext webgl no-touch geolocation postmessage websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths is-win is-chrome">
+  
+  <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 
 
-<style>
 
-.goog-te-banner-frame{
-	display:none
-}
-  .engname1{
-   color: #d1cde5;
-   font-size:1.5rem;
-   font-weight: bold;
-   vertical-align: middle;
-   text-transform: capitalize;
-  }
-  .engname2{
-    font-size: 3rem;
-    font-weight: bold;
-    vertical-align: middle;
-    text-transform: capitalize;
-  }
-  .engname3{
-    font-size: 1rem;
-    font-weight: bold;
-    vertical-align: middle;
-    text-transform: capitalize;
-  }
-</style>
-</head>
-<body>
-
-<header class="header-global">
-    <nav id="navbar-main" class="navbar navbar-main navbar-expand-lg navbar-transparent navbar-light headroom">
-      <div class="container">
-        <a class="navbar-brand mr-lg-5" href="/">
-          <img alt="image" src="./static/picture/white.png"><span class="engname1"> KoiCloud</span>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="navbar-collapse collapse" id="navbar_global">
-          <div class="navbar-collapse-header">
-            <div class="row">
-              <div class="col-6 collapse-brand">
-                <a href="/">
-                  <img alt="image" src="./static/picture/blue.png">
-
-                  <span class="engname3"> KoiCloud</span>
-                </a>
-              </div>
-              <div class="col-6 collapse-close">
-                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
-                  <span></span>
-                  <span></span>
-                </button>
-              </div>
-            </div>
-          </div>
-            <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
-				<li class="nav-item dropdown">
-								<a href="https://ssr.koicloud.pw/auth/login" class="nav-link" data-toggle="" role="button">
-					<i class="fa fa-sign-in"></i>
-					<span class="nav-link-inner--text">登陆</span>
-				</a>
-								</li>
-				<li class="nav-item dropdown">
-								<a href="https://ssr.koicloud.pw/auth/register" class="nav-link" data-toggle="" role="button">
-					<i class="fa fa-user-plus"></i>
-					<span class="nav-link-inner--text">注册</span>
-				</a>
-								</li>
-				<li class="nav-item dropdown">
-				<a href="https://docs.lsjproxy.com/" class="nav-link" data-toggle="" role="button">
-					<i class="fa fa-question-circle"></i>
-					<span class="nav-link-inner--text">帮助中心</span>
-				</a>
-				</li>
-            </ul>
-          
-            <ul class="navbar-nav align-items-lg-center ml-lg-auto">
-				<li class="nav-item">
-				<!--<a class="nav-link nav-link-icon" href="#" target="_blank" data-toggle="tooltip" title="Star us on Telegram">
-					<i class="fa fa-telegram"></i>
-					<span class="nav-link-inner--text d-lg-none">Telegram</span>
-				</a>-->
-				
-				</li>
-				
-            </ul>
-        </div>
-      </div>
-    </nav>
-</header>
-
-<main>
-    <div class="position-relative">
-      <!-- Hero for FREE version -->
-      <section class="section section-lg section-hero section-shaped">
-        <!-- Background circles -->
-        <div class="shape shape-style-1 shape-primary">
-          <span class="span-150"></span>
-          <span class="span-50"></span>
-          <span class="span-50"></span>
-          <span class="span-75"></span>
-          <span class="span-100"></span>
-          <span class="span-75"></span>
-          <span class="span-50"></span>
-          <span class="span-100"></span>
-          <span class="span-50"></span>
-          <span class="span-100"></span>
-        </div>
-        <div class="container shape-container d-flex align-items-center py-lg">
-          <div class="col px-0">
-            <div class="row align-items-center justify-content-center">
-              <div class="col-lg-6 text-center">
-                <img alt="image" src="./static/picture/white.png" style="width: 3.5rem;" class="img-fluid">
-                <span class="engname2 text-white"> KoiCloud</span>
-                <p class="lead text-white">拥有/全/球/诸多/骨/干C/N/2优/化/线/路, 支持Android/IOS/Windows/Mac/网/络/加/速</p>
-                <div class="btn-wrapper mt-5">
-                                    <a href="https://ssr.koicloud.pw/auth/login" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
-                    <span class="btn-inner--icon"><i class="fa fa-sign-in"></i></span>
-                    <span class="btn-inner--text">登陆</span>
-                  </a>
-                                                        <a href="https://ssr.koicloud.pw/auth/register" class="btn btn-lg btn-github btn-icon mb-3 mb-sm-0">
-                    <span class="btn-inner--icon"><i class="fa fa-user-plus"></i></span> 
-                    <span class="btn-inner--text"><span class="text-warning">注</span> 册</span>
-                  </a>
-                                  </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <!-- SVG separator -->
-        <div class="separator separator-bottom separator-skew zindex-100">
-          <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1" xmlns="https://www.w3.org/2000/svg">
-            <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
-          </svg>
-        </div>
-      </section>
-    </div>
-    <section class="section pt-lg-0 mt--100">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-12">
-            <div class="row row-grid">
-              <div class="col-lg-4">
-                <div class="card card-lift--hover shadow border-0">
-                  <div class="card-body py-5">
-                    <div class="icon icon-shape icon-shape-primary rounded-circle mb-4">
-                      <i class="ni ni-check-bold"></i>
-                    </div>
-                    <h6 class="text-primary text-uppercase">月付萌新用户20G</h6>
-                    <p class="description mt-3">可靠的基础设施，并能提供您喜爱的诸多功能.通过我们的网络访问内容提供商、公司网络和公共云服务</p>
-                    <div>
-					  <span class="badge badge-pill badge-primary">需要付费 5.00 / CNY</span>
-                      <span class="badge badge-pill badge-primary">内含 20 G流量可用</span>
-                      <span class="badge badge-pill badge-primary">全/球 2 个 1 等级节/点可用</span>
-                      <span class="badge badge-pill badge-primary">快速客服响应</span>
-                    </div>
-                    <a href="https://ssr.koicloud.pw/auth/register" class="btn btn-primary mt-4">Get Free Plan</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card card-lift--hover shadow border-0">
-                  <div class="card-body py-5">
-                    <div class="icon icon-shape icon-shape-success rounded-circle mb-4">
-                      <i class="ni ni-istanbul"></i>
-                    </div>
-                    <h6 class="text-success text-uppercase">月付进阶用户50G</h6>
-                    <p class="description mt-3">无论是移动的手机还是固定的电脑，随时随处可用.适用于 macOS、iOS、Android、Windows 和 Linux</p>
-                    <div>
-					  <span class="badge badge-pill badge-success">仅需 12.00 / CNY</span>
-                      <span class="badge badge-pill badge-success">内含 100 G流量可用</span>
-                      <span class="badge badge-pill badge-success">全/球 8 个 2 等级节/点可用</span>
-                      <span class="badge badge-pill badge-success">快速客服响应</span>
-                    </div>
-                    <a href="https://ssr.koicloud.pw/auth/register" class="btn btn-success mt-4">Start UP Plan</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-lg-4">
-                <div class="card card-lift--hover shadow border-0">
-                  <div class="card-body py-5">
-                    <div class="icon icon-shape icon-shape-warning rounded-circle mb-4">
-                      <i class="ni ni-planet"></i>
-                    </div>
-                    <h6 class="text-warning text-uppercase">月付专线用户300G</h6>
-                    <p class="description mt-3">解锁流媒体，内容包括 Net/flix、Hu/lu、H/BO、T/V/B、Happ/yon、Abe/maTV 等在内的多种流媒体视频.</p>
-                    <div>
-					  <span class="badge badge-pill badge-warning">仅需 18 / CNY</span>
-                      <span class="badge badge-pill badge-warning">内含 300 G流量可用</span>
-                      <span class="badge badge-pill badge-warning">全/球 30 个 3 等级节/点可用</span>
-                      <span class="badge badge-pill badge-warning">快速客服响应</span>
-                    </div>
-                    <a href="https://ssr.koicloud.pw/auth/register" class="btn btn-warning mt-4">Medium Plan</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section mt--100">
-      <div class="container">
-        <div class="row row-grid align-items-center">
-          <div class="col-md-6 order-md-2">
-            <img src="./static/picture/ill.svg" class="img-fluid floating" alt="image">
-          </div>
-          <div class="col-md-6 order-md-1">
-            <div class="pr-md-5">
-              <div class="icon icon-lg icon-shape icon-shape-success shadow rounded-circle mb-5">
-                <i class="ni ni-settings-gear-65"></i>
-              </div>
-              <h3>Our advantage</h3>
-              <p>我们拥有众多/全/球/加/速/网/络/连/接/节/点，专业的C/N/2/直/连/网/络/线/路，为客户提供高/速/稳/定/的网/络体验.</p>
-              <ul class="list-unstyled mt-5">
-                <li class="py-2">
-                  <div class="d-flex align-items-center">
-                    <div>
-                      <div class="badge badge-circle badge-success mr-3">
-                        <i class="ni ni-settings-gear-65"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <h6 class="mb-0">Use effortlessly</h6>
-                    </div>
-                  </div>
-                </li>
-                <li class="py-2">
-                  <div class="d-flex align-items-center">
-                    <div>
-                      <div class="badge badge-circle badge-success mr-3">
-                        <i class="ni ni-html5"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <h6 class="mb-0">Access your content</h6>
-                    </div>
-                  </div>
-                </li>
-                <li class="py-2">
-                  <div class="d-flex align-items-center">
-                    <div>
-                      <div class="badge badge-circle badge-success mr-3">
-                        <i class="ni ni-satisfied"></i>
-                      </div>
-                    </div>
-                    <div>
-                      <h6 class="mb-0">Get assistance 24/7</h6>
-                    </div>
-                  </div>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section class="section py-5 bg-secondary">
-      <div class="container">
-        <div class="row row-grid align-items-center">
-          <div class="col-md-6">
-            <div class="card bg-default shadow border-0">
-              <img src="./static/picture/netflix.png" class="card-img-top" alt="image">
-            </div>
-          </div>
-          <div class="col-md-6">
-            <div class="pl-md-5">
-              <div class="icon icon-lg icon-shape icon-shape-warning shadow rounded-circle mb-5">
-                <i class="ni ni-settings"></i>
-              </div>
-              <h3>Unlock streaming</h3>
-              <p class="lead">解锁流媒体, 观看和收听高质量的内容.</p>
-              <p>通过使用 KoiCloud 应用, 您可以观看各种流媒体视频，包括Net/flix、Hu/lu、H/B/O、T/V/B、Happ/yon、Abe/maTV等，还可以收听流媒体音乐，包括Spo/tify、Pan/dora等.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
 	
-    	
-	<section class="section">
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-8 text-center">
-            <h2 class="display-3">Protect all your devices</h2>
-            <p class="lead">
-              我们的应用程序支持iOS、Android、Mac和PC. 最重要的是, 使用我们的帐户, 您可以同时保护多个设备.
-            </p>
-				<div class="btn-wrapper mt-5">
-				                  <a href="https://ssr.koicloud.pw/auth/login" class="btn btn-lg btn-white btn-icon mb-3 mb-sm-0">
-                    <span class="btn-inner--icon"><i class="fa fa-sign-in"></i></span>
-                    <span class="btn-inner--text">登陆</span>
-                  </a>
-				  
-                                    <a href="https://ssr.koicloud.pw/auth/register" class="btn btn-lg btn-github btn-icon mb-3 mb-sm-0">
-                    <span class="btn-inner--icon"><i class="fa fa-user-plus"></i></span> 
-                    <span class="btn-inner--text"><span class="text-warning">注</span> 册</span>
-                  </a>
-                                  </div>
-          </div>
-        </div>
-      </div>
-    </section>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Maisan's Tunnel</title>
 
-  </main>
-  <footer class="footer has-cards">
 
-    <div class="container">
-      <div class="row row-grid align-items-center my-md">
-        <div class="col-lg-6">
-            <div class="card shadow shadow-lg--hover">
-              <div class="card-body">
-                <div class="d-flex px-3">
-                  <div>
-                    <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
-                      <i class="ni ni-satisfied"></i>
-                    </div>
-                  </div>
-                  <div class="pl-4">
-                    <h5 class="title text-success">Awesome Support</h5>
-                    <p>有任何关于会员计划的疑问？点击右下角联系我们的售前咨询小组，马上为您解答.</p>
-                    <a href="https://t.me/joinchat/Hnzf_xaxeyDGkLe5fzmLRg" class="text-success">Learn more</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-			</div>
-		<div class="col-lg-6">	
-            <div class="card shadow shadow-lg--hover">
-              <div class="card-body">
-                <div class="d-flex px-3">
-                  <div>
-                    <div class="icon icon-shape bg-gradient-warning rounded-circle text-white">
-                      <i class="ni ni-active-40"></i>
-                    </div>
-                  </div>
-                  <div class="pl-4">
-                    <h5 class="title text-warning">Awesome Support</h5>
-                    <p>KoiCloud 在您的订阅周期内为您提供一定程度上的技术支持.</p>
-                    <a href="https://t.me/joinchat/Hnzf_xaxeyDGkLe5fzmLRg" class="text-warning">Learn more</a>
-                  </div>
-                </div>
-              </div>
-            </div>
+	<link rel="shortcut icon" href="./mainmomo/favicon.ico">
+	<link rel="icon" href="./mainmomo/favicon.ico">
+
+	<link rel="stylesheet" href="./mainmomo/style.css">
+	<link rel="stylesheet" href="./mainmomo/manga.css">
+	
+
+
+	<script type="text/javascript" src="./mainmomo/jquery.js"></script>
+<script type="text/javascript" src="./mainmomo/jquery-migrate.min.js"></script>
+</head>
+
+<body class="page-template page-template-page-fontpacklp page-template-page-fontpacklp-php page page-id-8" id="manga">
+
+<div id="l-wrap">
+
+	  <header id="l-header" class="header js-toggle-menu" data-scroll-header="">
+    <div class="header__inner">
+      <h1><a href="" width="283" height="46" data-scroll=""><img src="./mainmomo/logo_main0.png" alt="mojimo"></a></h1>
+
+      <nav class="gnav js-toggle-menu__target">
+        <div class="gnav__inner" data-pos-target2="">
+
+
+		  <ul class="gnav__user">
+            <li><a href="https://v2.koicloud.pw/auth/register" target="_blank" class="is-primaly is-manga">会員注册</a></li>
+			<li><a href="https://v2.koicloud.pw/auth/login" target="_blank" class="is-manga">会員登入</a></li>
+          </ul>
         </div>
-      </div>
-	   <div class="row row-grid align-items-center">
-        <div class="col-lg-6">
-          <h4 class="text-white mb-2">Thank you for supporting KoiCloud.</h4>
-          <p class="text-white font-weight-light">Provide users with high-speed and stable cost-effective network relay service.</p>
+      </nav>
+
+      <button class="header__btn js-toggle-menu__trigger">
+        <div class="menu-icon">
+          <span class="menu-icon__top"></span>
+          <span class="menu-icon__mdl"></span>
+          <span class="menu-icon__btm"></span>
         </div>
-        <div class="col-lg-6 text-lg-right btn-wrapper">
-          <!--<div id="google_translate_element" style="width:8.2rem;float:right;"></div>-->
-          <a target="_blank" href="javascript:void(0);" class="btn btn-neutral btn-icon-only btn-twitter btn-round btn-lg" data-toggle="tooltip" data-original-title="Follow us">
-            <i class="fa fa-twitter"></i>
-          </a>
-          <a target="_blank" href="javascript:void(0);" class="btn btn-neutral btn-icon-only btn-facebook btn-round btn-lg" data-toggle="tooltip" data-original-title="Like us">
-            <i class="fa fa-facebook-square"></i>
-          </a>
-          <a href="https://t.me/RYANQWQ" target="_blank" class="btn btn-neutral btn-icon-only btn-dribbble btn-lg btn-round" data-toggle="tooltip" data-original-title="Follow us">
-            <i class="fa fa-send"></i>
-          </a>
-          <a target="_blank" href="javascript:void(0);" class="btn btn-neutral btn-icon-only btn-github btn-round btn-lg" data-toggle="tooltip" data-original-title="Star on Github">
-            <i class="fa fa-github"></i>
-          </a>
-        </div>
-      </div>
-      <hr>
-      <div class="row align-items-center justify-content-md-between">
-       <div class="col">
-         <div class="col-lg-6 col-md-6">
-          <div class="copyright text-white">&copy; 2019 Powered by <a class="text-white" href="https://ssr.koicloud.pw/staff" target="_blank">STAFF</a>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6">
-           <div class="copyright"><a class="text-white" href="https://t.me/shushenM" target="_blank">Creative shushen</a></div>
-          <!--<ul class="nav nav-footer justify-content-end">
-            <li class="nav-item">
-              <a href="https://t.me/shushengM" class="text-white" target="_blank">Creative shushen</a>
-            </li>
-          </ul>-->
-        </div>
-       </div>  
-      </div>
+      </button>
     </div>
-  </footer>
-  <!-- Core -->
+  </header>
+  
 
-  <literal>
+	
+	
+	
+  
+  
+  
 
-</literal>  <script src="./static/js/jquery@2.2.1.js"></script>
-  <script src="./static/js/bootstrap.bundle.min.js"></script>
-  <script src="./static/js/headroom.min.js"></script>
-  <script src="./static/js/argon.js"></script>
+	
 
-</body>
+	
 
-</html>
+	
+	<main class="main">
+  <section id="hero" class="hero js-setWinHeight" style="height: 922px;">
+    <div class="hero__logo">
+      <img src="./mainmomo/logo_main2.png">
+    </div>
+    <ul class="hero-parallax js-parallax" style="transform: translate3d(0px, 0px, 0px) rotate(0.0001deg); transform-style: preserve-3d; backface-visibility: hidden; pointer-events: none;">
+      <li class="hero-parallax__layer is-layer1" data-depth="0.00" style="transform: translate3d(0px, 0px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: relative; display: block; left: 0px; top: 0px;">
+        <div class="layer--color"></div>
+        <div class="layer--line"></div>
+      </li>
+      <li class="hero-parallax__layer is-layer2" data-depth="0.20" style="transform: translate3d(29px, -2.7px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+        <div class="layer--color"></div>
+        <div class="layer--line"></div>
+      </li>
+      <li class="hero-parallax__layer is-layer3" data-depth="0.40" style="transform: translate3d(58px, -5.4px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+        <div class="layer--color"></div>
+        <div class="layer--line"></div>
+      </li>
+      <li class="hero-parallax__layer is-layer4" data-depth="0.60" style="transform: translate3d(87.1px, -8.2px, 0px); transform-style: preserve-3d; backface-visibility: hidden; position: absolute; display: block; left: 0px; top: 0px;">
+        <div class="layer--color"></div>
+        <div class="layer--line"></div>
+      </li>
+    </ul>
 
+  </section>
+
+  <section id="about" class="about" data-pos="">
+    <div class="about__inner">
+      <h2 class="about__title"><span>少女/少年一键接入梦想之地！</span></h2>
+      <dl class="about__desc">
+        <dt>苏打云网络中继服务，随时随处尽情使用<br></dt>
+        <dd>
+          在你心爱的电子设备中使用，无论是移动的手机还是固定的电脑，随时随处可用<br>
+          我们的服务适用于 macOS、iOS、Android、Windows和Linux，借助第三方客户端，可在手机、电脑、路由器、游戏机、电视盒子中使用。
+          <br>不要把宝贵的时间，浪费在等待上。即刻开启全球网络中继服务，在任何时间任何地点访问全球互联网。
+        </dd>
+      </dl>
+      <em></em>
+    </div>
+
+
+  <!-- よくあるご質問 -->
+  <section id="faq" class="faq section" data-pos="">
+    <div class="faq__inner">
+      <h2 class="section__title">可能会遇到的问题</h2>
+      <ul class="faq-list"><li class="faq-list__item"><dl class="faq-acd faq-acd--depth2 js-toggle-acd" data-faq-category="manga"><dt class="faq-acd__question js-toggle-acd__trigger">购买说明</dt><dd class="faq-acd__answer js-toggle-acd__target"><div class="faq-acd__text"><p>
+1.1    每个账号都对应唯一端口及服务配置信息，在付款后账号通过后台自动开通。<br>
+
+1.2    iOS或某些平台上需要使用专属软件，该软件已在App Store中付费购买免费提供。<br>
+
+1.3    本站会根据网络情况调整节点情况，其中香港、日本、新加坡、美国等地区为基础节点。<br>
+
+1.4    本站无测试账号及测试IP提供。如有需要，请购买1元试用套餐。<br>
+
+
+
+</p></div></dd></dl></li><li class="faq-list__item"><dl class="faq-acd faq-acd--depth2 js-toggle-acd" data-faq-category="manga"><dt class="faq-acd__question js-toggle-acd__trigger">使用说明</dt><dd class="faq-acd__answer js-toggle-acd__target"><div class="faq-acd__text"><p>
+	
+Step 1: 注册，充值，选购<br>
+Step 2: 前往教程中心，查阅对应客户端的教程 <br>
+Step 3: 下载对应客户端<br>
+Step 4: 冲鸭！
+<strong></strong></p>
+</div>
+
+</dd></dl></li>
+
+
+
+</ul>
+
+      
+    </div>
+  </section>
+  <!-- よくあるご質問 -->
+
+
+
+  <aside class="apply section">
+    <div class="section-inner">
+      <ul class="section__btn btn-list is-col3 is-center">
+        <li>
+        <center> <a href="https://v2.koicloud.pw" target="_blank" class="btn-l is-manga" >👉准备好了/马上开始🚀</a></center>
+        </li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- mojimoとは？ -->
+  <section id="mojimo" class="lineup section" data-pos="">
+    <div class="lineup__inner">
+      <h2 class="section__title">数据中心及线路更多信息</h2>
+
+        <ul class="lineup-list">
+        <li class="lineup-list__item">
+          <a href="https://v2.koicloud.pw" target="_blank">
+            <div class="lineup-list__logo">
+              <h3>
+                <img src="./mainmomo/logo_main3.png">
+              </h3>
+            </div>
+            <div class="lineup-list__desc">
+              <dl>
+                <dt>
+            
+              </dt>
+                <dd>
+                  <span class="txt-kern"></span>满足您需求的数据传输服务<br>
+                  <br>
+                  <span class="txt-kern"></span>体验宛若身在海外的访问速度。<br> 您的请求将被采用最新的加密技术传输，更能保证您的数据安全。
+                  <br> 我们以优质资源与冗余备份确保其畅通可靠，为您提供快速稳定的国际网络接入。
+                </dd>
+              </dl>
+            </div>
+          </a>
+        </li>
+      </ul>
+      
+    </div>
+  </section>
+  <!-- mojimoとは？ -->
+</main>
+
+<div class="bottom-group">
+  <div class="bottom-group__inner">
+
+    
+    <nav class="breadcrumb">
+          <ul class="breadcrumb-list">
+        <li>
+         Powered 
+        </li>
+                <li>
+          <a href="./staff">STAFF</a>
+        </li>
+      </ul>
+        </nav>
+  </div>
+</div>
+
+<footer id="l-footer" class="footer">
+
+  <div class="footer__section2">
+    <div class="footer__inner">
+      <nav class="footer-list__corporate">
+        <ul>
+          <li><a href="#" target="_blank">お問い合わせ</a></li>
+          <li><a href="#" target="_blank">協力相互リンク</a></li>
+          <li><a href="#" target="_blank">協力相互リンク</a></li>
+          <li><a href="#" target="_blank">協力相互リンク</a></li>
+        </ul>
+      </nav>
+      <!--
+      <nav class="footer-list__services">
+        <ul>
+          <li><a href="#" target="_blank">協力相互リンク</a></li>
+        </ul>
+      </nav>
+      -->
+    </div>
+  </div>
+
+  <div class="footer__section3">
+    <div class="footer__inner">
+      <aside class="footer-list__aside">
+        <ul>
+          <li><a href="" target="_blank"><img src="./mainmomo/i_aside_facebook.svg" width="24" height="24" alt="facebook"></a></li>
+          <li><a href="" target="_blank"><img src="./mainmomo/i_aside_twitter.svg" width="24" height="24" alt="Twitter"></a></li>
+          <li><a href="" target="_blank"><img src="./mainmomo/i_aside_instagram.svg" width="24" height="24" alt="instagram"></a></li>
+        </ul>
+      </aside>
+      <a href="" target="_blank" class="footer__logo footer__logo--fw"><img src="./mainmomo/logo_main0.png"></a>
+      <address class="footer__copylight">© 2020 SPEED Inc. All Rights Reserved.</address>
+    </div>
+  </div>
+
+</footer>
+
+<a id="l-pagetop" class="pagetop" href="" data-pagetop-status="hidden" data-scroll="">ページの先頭へ</a>
+
+<div id="sp-flg"></div>
+</div>
+
+<div id="l-loading">
+<div id="js-animation__loading"></div>
+</div>
+
+<script src="./mainmomo/jquery.min.js"></script>
+<script src="./mainmomo/vendor.js"></script>
+<script src="./mainmomo/site.js"></script>
+<script src="./mainmomo/safe2.js"></script>
+
+<script type="text/javascript" src="./mainmomo/frontend-min.js"></script>
+<script type="text/javascript">
+$('img').on('mousedown',function (e) {
+    e.preventDefault()
+})
+</script>
+
+<div id="cboxOverlay" style="display: none;"></div><div id="colorbox" class="" role="dialog" tabindex="-1" style="display: none;"><div id="cboxWrapper"><div><div id="cboxTopLeft" style="float: left;"></div><div id="cboxTopCenter" style="float: left;"></div><div id="cboxTopRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxMiddleLeft" style="float: left;"></div><div id="cboxContent" style="float: left;"><div id="cboxTitle" style="float: left;"></div><div id="cboxCurrent" style="float: left;"></div><button type="button" id="cboxPrevious"></button><button type="button" id="cboxNext"></button><button type="button" id="cboxSlideshow"></button><div id="cboxLoadingOverlay" style="float: left;"></div><div id="cboxLoadingGraphic" style="float: left;"></div></div><div id="cboxMiddleRight" style="float: left;"></div></div><div style="clear: left;"><div id="cboxBottomLeft" style="float: left;"></div><div id="cboxBottomCenter" style="float: left;"></div><div id="cboxBottomRight" style="float: left;"></div></div></div><div style="position: absolute; width: 9999px; visibility: hidden; display: none; max-width: none;"></div></div></body></html>
